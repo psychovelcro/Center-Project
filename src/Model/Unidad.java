@@ -1,12 +1,15 @@
 package Model;
 
-import java.util.List;
 
-public abstract class Unidad {
+
+public abstract class Unidad extends Programa {
+
+	public Unidad() {
+		super();
+		
+	}
 	
-	private String nombre;
-	//porcentaje de respuesta
-	private double pc;
+	
 	
 	
 	
