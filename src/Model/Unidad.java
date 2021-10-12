@@ -1,17 +1,8 @@
 package Model;
 
+public abstract class Unidad {
 
-
-public abstract class Unidad extends Programa {
-
-	public Unidad() {
-		super();
-		
-	}
-	
-	
-	
-	
-	
+	private int score;
+	private double itemDifficulty;
 
 }
