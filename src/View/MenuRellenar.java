@@ -27,10 +27,13 @@ import javax.swing.border.MatteBorder;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.DefaultListModel;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.ListSelectionModel;
 
 public class MenuRellenar extends JFrame {
 
@@ -42,6 +45,9 @@ public class MenuRellenar extends JFrame {
 	private JTextField ProgramaTxt;
 	private JLabel lblPrograma;
 	private JButton btnAddProgram;
+
+	private JScrollPane scrollPane;
+	
 
 	public void setControlador(Controlador miControlador) {
 		this.miControlador = miControlador;
@@ -66,9 +72,13 @@ public class MenuRellenar extends JFrame {
 
 				String Name = ProgramaTxt.getText();
 				System.out.println(Name);
-				
+				miControlador.addProgram(Name);
+
 			}
 		});
+
+		
+
 		btnAddProgram.setBounds(392, 258, 51, 23);
 		contentPane.add(btnAddProgram);
 

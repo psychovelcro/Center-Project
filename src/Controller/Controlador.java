@@ -1,5 +1,7 @@
 package Controller;
 
+import java.awt.Component;
+
 import javax.swing.JFrame;
 
 import Model.Programa;
@@ -59,6 +61,12 @@ public class Controlador {
 
 	public void addProgram(String text) {
 		miPrograma.setNombre(text);
+		miPrograma.getListadoUnidades().add(text);
+	}
+
+	public Component getlistaPrograma() {
+		
+		return (Component) miPrograma.getListadoUnidades();
 	}
 	
 	
