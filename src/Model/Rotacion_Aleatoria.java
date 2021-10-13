@@ -1,5 +1,5 @@
 package Model;
 
-public class Rotacion_Aleatoria {
+public class Rotacion_Aleatoria extends TipoRespuesta {
 
 }

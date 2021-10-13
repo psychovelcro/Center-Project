@@ -2,13 +2,17 @@ package Controller;
 
 import javax.swing.JFrame;
 
+import Model.Programa;
 import View.Masificacion;
 import View.Menu;
+import View.MenuRellenar;
 
 public class Controlador {
 
 	private Masificacion mivista;
 	private Menu miMenu;
+	private MenuRellenar mimenuarellenar;
+	private Programa miPrograma;
 
 	public void setVista(Masificacion mivista) {
 		this.mivista = mivista;
@@ -46,6 +50,15 @@ public class Controlador {
 
 	public void setMiMenu(Menu miMenu) {
 		this.miMenu = miMenu;
+	}
+
+	public void setMenuRellenar(MenuRellenar mimenuarellenar) {
+		this.mimenuarellenar = mimenuarellenar;
+		
+	}
+
+	public void addProgram(String text) {
+		miPrograma.setNombre(text);
 	}
 	
 	

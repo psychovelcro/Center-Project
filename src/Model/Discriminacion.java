@@ -1,5 +1,5 @@
 package Model;
 
-public class Discriminacion {
+public class Discriminacion extends TipoRespuesta {
 
 }

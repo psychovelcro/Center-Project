@@ -1,5 +1,5 @@
 package Model;
 
-public class Masificacion {
+public class Masificacion extends TipoRespuesta {
 
 }
